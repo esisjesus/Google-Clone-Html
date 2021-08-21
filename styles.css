@@ -1,24 +1,32 @@
-
+body{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
 .nav{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 100vw;
+    width: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-top: 3px;
 }
 .list{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 250px;
+    width: 227px;
     margin:0px 6px;
 }
 .item{
     margin: 0px;
     cursor: pointer;
     margin-left: 16.7px;
+    
 }
 .dots{
     width: 25px;
@@ -43,10 +51,11 @@
     margin-top: 1px;
 }
 .link{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
-    font-size: 14px;
+    font-size: 13.5px;
     text-decoration-line: none;
+    cursor: pointer;
 }
 .link:hover{
     text-decoration: underline;
@@ -54,4 +63,74 @@
 }
 path{
     fill: rgb(109, 109, 109);
+}
+.central{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -70px;
+}
+.central_search{
+    width: 550px;
+    margin-top: 25px;
+    border-radius: 1.625rem;
+    border: 1px solid rgb(221, 221, 221);
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+}
+.central_search:hover{
+    box-shadow: -1px 2px 8px -3px rgba(0,0,0,0.39);
+}
+.central_search-input{
+    width: 100%;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.central_search-input:focus-visible{
+    outline: none;
+}
+.central_buttons{
+    margin-top: 20px;
+    
+}
+.central_buttons_button{
+    border: none;
+    background-color: #f8f9fa ;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    margin:  5px;
+    cursor: pointer;
+    border: 1px solid #f8f9fa;
+}
+.central_buttons_button:hover{
+    border: 1px solid rgb(221, 221, 221);
+}
+
+.footer{
+    height: 47px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background-color: #f2f2f2;
+    border: 1px solid rgb(221, 221, 221);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 5px 5px;
+
+}
+.footer_section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 37px;
+    margin: 0px 10px;
 }
